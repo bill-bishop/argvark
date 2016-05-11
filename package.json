@@ -24,5 +24,13 @@
     "parser"
   ],
   "author": "William Bishop",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/william-mcmillian/argvark.git"
+  },
+  "bugs": {
+    "url": "https://github.com/william-mcmillian/argvark/issues"
+  },
+  "homepage": "https://github.com/william-mcmillian/argvark#readme"
 }
