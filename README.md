@@ -22,5 +22,5 @@ You can evaluate the arguments like so:
 
 Unmatched patterns evaluate to undefined
 
-    location = require('--location')    // undefined
+    location = args('--location')    // undefined
 
