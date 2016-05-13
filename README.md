@@ -5,14 +5,20 @@ Intuitive command-line argument parsing for Node.js modules
   - If your regex has at least one grouping ie. (\d), argvark will
       return the first group.
 
+# Install
+
+    npm install argvark
+
+
 # Usage
+
+    var args = require('argvark');
+
 Given the following node process:
 
     > node some-module -p --age=123 --name="William Bishop"
 
 You can evaluate the arguments like so:
-
-    var args = require('argvark');
 
     // Flags:
     p = args('-p');                // '-p'
@@ -27,10 +33,9 @@ Use after() when the value is separated from the param by a space:
 
     args.after('port') // 8888
 
-Use flag() for a Boolean value indicating the flag presence. Standard flag
-format is assumed: -[flags] 
-This is merely a convenience, as this is easily achieved with the standard
-functionality and a pattern.
+Use flag() when you want a Boolean value indicating the flag presence, or when
+you don't want to build your own pattern just to check flags. Standard flag
+format is assumed: -[flags]
 
     > node some-module -abCD
 
