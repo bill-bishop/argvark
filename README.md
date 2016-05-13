@@ -40,3 +40,7 @@ Unmatched patterns evaluate to undefined
 
     location = args('--location')    // undefined
 
+
+# Making changes
+Just run `npm test` to make sure everything is still working. Add tests for
+fixes etc.
