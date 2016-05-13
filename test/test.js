@@ -13,7 +13,18 @@ describe('when no match', function () {
   it('should return undefined', function () {
     assert.equal(getArg('--bar'), undefined);
     assert.equal(getArg(/argvark/), undefined);
-    assert.equal(getArg.flag('X'), false);
+  });
+
+  describe('.flag()', function () {
+    it('should return false', function () {
+      assert.equal(getArg.flag('X'), false);
+    });
+  });
+
+  describe('.after()', function () {
+    it('should return undefined', function () {
+      assert.equal(getArg.after('/A'), undefined);
+    });
   });
 });
 
