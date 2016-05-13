@@ -5,6 +5,7 @@ Intuitive command-line argument parsing for Node.js modules
   - If your regex has at least one grouping ie. (\d), argvark will
       return the first group.
 
+# Usage
 Given the following node process:
 
     > node some-module -p --age=123 --name="William Bishop"
@@ -25,6 +26,18 @@ Use after() when the value is separated from the param by a space:
     > node some-module port 8888
 
     args.after('port') // 8888
+
+Use flag() for a Boolean value indicating the flag presence. Standard flag
+format is assumed: -[flags] 
+This is merely a convenience, as this is easily achieved with the standard
+functionality and a pattern.
+
+    > node some-module -abCD
+
+    args.flag('b') // true
+    args.flag('D') // true
+
+    args.flag('X') // false
 
 Unmatched patterns evaluate to undefined
 
