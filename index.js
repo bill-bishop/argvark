@@ -25,8 +25,8 @@
 function getArg(pattern) {
   pattern = pattern instanceof RegExp ? pattern : new RegExp(pattern);
   var argument = (process.argv.filter(function (arg) {
-        return pattern.test(arg);
-      })[0] || '').match(pattern) || [];
+    return pattern.test(arg);
+  })[0] || '').match(pattern) || [];
   return argument[1] || argument[0];
 }
 
