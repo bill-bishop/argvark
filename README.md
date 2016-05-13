@@ -1,10 +1,6 @@
 # argvark
 Intuitive command-line argument parsing for Node.js modules
 
-  - String or regex matches are valid.
-  - If your regex has at least one grouping ie. (\d), argvark will
-      return the first group.
-
 # Install
 
     npm install argvark
@@ -12,15 +8,11 @@ Intuitive command-line argument parsing for Node.js modules
 
 # Usage
 
-    var args = require('argvark');
-
-Given the following node process:
-
     > node some-module -p --age=123 --name="William Bishop"
 
-You can evaluate the arguments like so:
+    var args = require('argvark');
 
-    // Flags:
+    // Simple matches:
     p = args('-p');                // '-p'
 
     // Verbose Parameters:
