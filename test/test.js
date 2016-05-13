@@ -4,7 +4,9 @@ var assert = require('chai').assert;
 process.argv = ['node', 'some-module',
   '-p',
   '-abCD',
-  '--foo=bar'
+  '--foo=bar',
+  'username',
+  'william-mcmillian'
 ];
 
 describe('when no match', function () {
@@ -18,6 +20,12 @@ describe('string pattern', function () {
   it('should return the matching portion of the argument', function () {
     assert.equal(getArg('-p'), '-p');
     assert.equal(getArg('--foo'), '--foo');
+  });
+});
+
+describe('.after(pattern)', function () {
+  it('should return the parameter after the matched pattern', function () {
+    assert.equal(getArg.after('username'), 'william-mcmillian');
   });
 });
 

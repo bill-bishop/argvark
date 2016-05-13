@@ -30,4 +30,15 @@ function getArg(pattern) {
   return argument[1] || argument[0];
 }
 
+getArg.after = function (pattern) {
+  var result;
+  pattern = pattern instanceof RegExp ? pattern : new RegExp(pattern);
+  process.argv.forEach(function (arg, i) {
+    if(!result && pattern.test(arg)) {
+      result = process.argv[i + 1];
+    }
+  });
+  return result;
+};
+
 module.exports = getArg;

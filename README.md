@@ -20,6 +20,12 @@ You can evaluate the arguments like so:
     age = args(/--age=(\d+)/)      // 123
     name = args(/--name="(.+?)"/)  // 'William Bishop'
 
+Use after() when the value is separated from the param by a space:
+
+    > node some-module port 8888
+
+    args.after('port') // 8888
+
 Unmatched patterns evaluate to undefined
 
     location = args('--location')    // undefined
