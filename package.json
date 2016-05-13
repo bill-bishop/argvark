@@ -4,7 +4,7 @@
   "description": "Intuitive command-line argument parsing for Node.js modules",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/test.js"
   },
   "keywords": [
     "arg",
@@ -32,5 +32,9 @@
   "bugs": {
     "url": "https://github.com/william-mcmillian/argvark/issues"
   },
-  "homepage": "https://github.com/william-mcmillian/argvark#readme"
+  "homepage": "https://github.com/william-mcmillian/argvark#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
 }
