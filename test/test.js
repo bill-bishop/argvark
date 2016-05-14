@@ -58,6 +58,7 @@ describe('regex pattern', function () {
   describe('with groupings', function () {
     it('should return the first group', function () {
       assert.equal(getArg(/--foo=(\w+)/), 'bar');
+      assert.equal(getArg(/--foo=(\w+)(r)/), 'ba');
     });
   });
 
