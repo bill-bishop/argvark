@@ -26,10 +26,11 @@ Use after() when the value is separated from the param by a space:
     argv.after('port') // 8888
 
 Use flag() when you want a Boolean value indicating the flag presence, or when
-you don't want to build your own pattern just to check flags. Standard flag
-format is assumed: -[flags]
+you don't want to build your own pattern just to check flags. This uses `!!argv(/-\w+[FLAG]/)`
+so it supports both standard flag formats:
 
     > node some-module -abCD
+    > node some-module -a -b -C -D
 
     argv.flag('b') // true
     argv.flag('D') // true
