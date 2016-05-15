@@ -8,7 +8,7 @@ Intuitive command-line argument parsing for Node.js modules
 
 ### Usage
 
-    > node some-module -p --age=123 --name="William Bishop"
+    > node some-module -p --age=123 --name="John Doe"
 
     var argv = require('argvark');
 
@@ -17,7 +17,7 @@ Intuitive command-line argument parsing for Node.js modules
 
     // Verbose Parameters:
     age = argv(/--age=(\d+)/)      // 123
-    name = argv(/--name="(.+?)"/)  // 'William Bishop'
+    name = argv(/--name="(.+?)"/)  // 'John Doe'
 
 Use after() when the value is separated from the param by a space:
 
