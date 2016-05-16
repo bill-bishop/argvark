@@ -18,6 +18,7 @@ describe('when no match', function () {
   describe('.flag()', function () {
     it('should return false', function () {
       assert.equal(getArg.flag('X'), false);
+      assert.equal(getArg.flag('f'), false);
     });
   });
 

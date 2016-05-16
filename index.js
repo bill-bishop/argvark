@@ -25,7 +25,7 @@ getArg.after = function (pattern) {
 };
 
 getArg.flag = function (pattern) {
-  return !!getArg(new RegExp('-.*' + pattern));
+  return !!getArg(new RegExp('-[^-]*' + pattern));
 };
 
 module.exports = getArg;
