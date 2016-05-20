@@ -1,8 +1,6 @@
 # argvark
 Intuitive command-line argument parsing for Node.js modules. 
 
-If you are building a simple CLI, the `x-cli` package (which uses argvark) may suit your needs: https://www.npmjs.com/package/x-cli
-
 ### Install
 
     npm install argvark
