@@ -1,0 +1,8 @@
+deploy:
+  provider: npm
+  email: will.h.bishop@gmail.com
+  api_key:
+    secure: EDq7jEXlOjJD3Gctuwinhe2qk+TlH0qh+8CoyAdSRB4ns1JFkxAEDmoE7IAV2HjE26FkKunp+OPHxRo356h3WXRNJpb648hNIguawdupCPT7pqsX7yoMmIYxCuafsTlUrG9hNC4ISBgLf1MwZjPLITW1mMbkT1C3H9UszGLNO2TLJOt0MO7lz1/mq/jGnMo9pjJAVMBYSZ4CV4O1ha7kH4VH1bvn1XP2qA1mrvrbK8hi/c8YySBubJaFMK+7EW3oeY5ea1gHYdrHDB3vRw9LyK1B8yOVwdWoLCZuwZD+L8D0wbmD2uwjgRdps3fX+6Q8TGGNRyLpjVWfPLPC4PvBiRJkQH8cLahLy8B/a90ftwZWsOS7XPOZXFK1otZFydsqHAmmi0sqLbq6SuhI1lDxvKtIxPevbz4AIJk2/cDvip04/9ThYY9CApRqD1tSFjkpxTg/EPsKhA+chDeY2PAdczfsge7NdTmYj0EfGbQhA9QFqA0ss0asTAj+2NNcHcO9Y0onfWykcbTkXcwb/mmxId6Odvf2HlW6yOC6WJWAZfNewMy1BYKr/ku5hl0oDU4/S3gyN1xZv/837iCVqvuE4GQdwBj2Vp5fxBPML4THgN0cLE8fXZA6B38lqvzmh3yJwKMp1aO4x8y5/uvLRo932513n/bFf5HS3kvcrZu99hQ=
+  on:
+    tags: true
+    repo: bill-bishop/argvark
