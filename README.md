@@ -1,4 +1,4 @@
-# argvark
+# argvark [![Build Status](https://travis-ci.com/bill-bishop/argvark.svg?branch=develop)](https://travis-ci.com/bill-bishop/argvark)
 Intuitive command-line argument parsing for Node.js modules. 
 
 ### Install
