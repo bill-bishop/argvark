@@ -1,6 +1,6 @@
 {
   "name": "argvark",
-  "version": "2.2.3",
+  "version": "2.2.4",
   "description": "Intuitive command-line argument parsing for Node.js modules",
   "main": "index.js",
   "scripts": {
